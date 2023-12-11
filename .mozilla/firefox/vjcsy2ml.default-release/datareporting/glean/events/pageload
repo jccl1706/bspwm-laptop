@@ -1,1 +1,0 @@
-{"timestamp":1365140,"category":"perf","name":"page_load","extra":{"js_exec_time":"245","fcp_time":"139","http_ver":"2","load_type":"HISTORY","load_time":"542","dns_lookup_time":"16","trr_domain":"mozilla.cloudflare-dns.com"},"execution_counter":26}
