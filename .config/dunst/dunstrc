@@ -1,0 +1,24 @@
+[global]
+
+padding = 8
+horizontal_padding = 8 
+frame_width = 3 
+font = JetBrainsMono Nerd Font (TTF) 11
+startup_notification = false
+alignment = center 
+
+frame_color = "#c6a0f6"
+separator_color= frame
+
+[urgency_low]
+background = "#24273A"
+foreground = "#CAD3F5"
+
+[urgency_normal]
+background = "#24273A"
+foreground = "#CAD3F5"
+
+[urgency_critical]
+background = "#24273A"
+foreground = "#CAD3F5"
+frame_color = "#F5A97F"

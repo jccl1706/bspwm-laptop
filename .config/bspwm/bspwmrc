@@ -1,0 +1,33 @@
+#! /bin/sh
+
+#pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d 1 2 3 4 5 6
+
+bspc config border_width          2
+bspc config window_gap            10
+
+bspc config split_ratio           0.52
+bspc config single_monocle	  false
+bspc config focus_follows_pointer true
+bspc config borderless_monocle    true
+bspc config gapless_monocle       true
+
+bspc config focused_border_color   "#DB93F9"
+bspc config normal_border_color	   "#282A36"
+bspc config active_border_color	   "#8BE9FD"
+bspc config presel_feedback_color  "#50FA7B"
+
+#bspc rule -a Gimp desktop='^5' state=floating follow=on
+#bspc rule -a firefox-esr desktop='^2'
+
+killall dunst
+dunst &
+sxhkd &
+nm-applet &
+killall polybar
+polybar --config=~/.config/polybar/config.ini main &
+picom &
+xsetroot -cursor_name left_ptr
+xset r rate 200 50
+#xrandr --output DisplayPort-0 --primary --mode 2560x1440 --rate 280
