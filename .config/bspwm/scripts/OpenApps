@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+case "$1" in
+
+	--terminal)
+		alacritty
+		;;
+	--floating)
+		alacritty --class FloaTerm,Alacritty -o window.dimensions.lines=22 window.dimensions.columns=90
+esac
