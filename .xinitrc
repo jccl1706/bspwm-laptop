@@ -7,6 +7,9 @@
 export PATH="$HOME/.config/.scripts/:$PATH"
 export PATH="$HOME/.config/bspwm/scripts:$PATH"
 
+## prime GPU
+#export
+
 ## set gtk theme
 #export GTK_THEME='Catppuccin-Macchiato-Standard-Mauve-Dark:dark'
 
