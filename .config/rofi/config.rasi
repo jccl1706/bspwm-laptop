@@ -1,14 +1,15 @@
 configuration{
-    modi: "drun";
+    modi: "drun,window";
     icon-theme: "Papirus-Dark";
     application-fallback-icon: 	"Adwaita";
-    show-icons: true;
+    show-icons: false;
     terminal: "kitty";
     drun-display-format: "{name}";
     location: 0;
     disable-history: true;
     hide-scrollbar: true;
     display-drun: "   Apps ";
+    display-window: "   Window";
     sidebar-mode: false;
     hover-select: true;
     me-select-entry: "";
@@ -16,12 +17,12 @@ configuration{
 }
 
 /* {
-font: "JetBrainsMono NF Bold 13";
+font: "JetBrainsMono Bold 20";
 background: #1A1B26;
 background-alt: #1A1B26E0;
 foreground: #c0caf5;
-selected: #7aa2f7;
-} */
+selected: #DB93F9;
+} 
 
 window {
     /* properties for window widget */
@@ -29,7 +30,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       550px;
+    width:                       800px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -39,6 +40,7 @@ window {
     cursor:                      "default";
     background-color:            @background;
 }
+
 
 mainbox {
     enabled:                     true;
@@ -104,6 +106,8 @@ element-text {
     vertical-align:              0.5;
     horizontal-align:            0.0;
 }
+*/
 
 /* @theme "nord" */
+@theme "catppuccin-macchiato"
 

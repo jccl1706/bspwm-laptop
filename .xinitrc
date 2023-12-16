@@ -14,10 +14,13 @@ export PATH="$HOME/.config/bspwm/scripts:$PATH"
 #export GTK_THEME='Catppuccin-Macchiato-Standard-Mauve-Dark:dark'
 
 ## set wallpaper
-#exec feh --bg-scale ~/.config/wallpapers/winter-wall2.png &
+#exec feh --bg-scale ~/.config/wallpapers/moon-evening-sky.jpg &
 
 ## policy
 #exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+## disable xauth
+# enable_xauth=0
 
 ## start bspwm
 exec bspwm

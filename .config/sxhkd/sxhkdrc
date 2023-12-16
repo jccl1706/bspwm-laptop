@@ -14,6 +14,9 @@ super + alt + Return
 super + @space
 	rofi -show drun
 
+super + alt +  @space
+  rofi -show window
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -64,28 +67,6 @@ super + ctrl + {m,x,y,z}
 super + {_,shift + }{Left,Down,Up,Right}
 	bspc node -{f,s} {west,south,north,east}
 
-# focus the node for the given path jump
-#super + {p,b,comma,period}
-#	bspc node -f @{parent,brother,first,second}
-
-# focus the next/previous window in the current desktop
-#super + {_,shift + }c
-#	bspc node -f {next,prev}.local.!hidden.window
-
-# focus the next/previous desktop in the current monitor
-#super + bracket{left,right}
-#	bspc desktop -f {prev,next}.local
-
-# focus the last node/desktop
-#super + {grave,Tab}
-#	bspc {node,desktop} -f last
-
-# focus the older or newer node in the focus history
-#super + {o,i}
-#	bspc wm -h off; \
-#	bspc node {older,newer} -f; \
-#	bspc wm -h on
-
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
@@ -126,7 +107,9 @@ super + alt + shift + {Left,Down,Up,Right}
 alt + shift {Left,Down,Up,Right}
 	bspc node -v {-10 0,0 10,0 -10,10 0}
 
+#
 # my key adds
+#
 
 # laptop screen brightness up
 #XF86MonBrightnessUp
@@ -138,7 +121,7 @@ alt + shift {Left,Down,Up,Right}
 
 # Scratchpad
 super + alt + o
-	tdrop -a -w 70% -h 35% -y 100 -x 15%  --class scratch kitty --class=scratch
+	tdrop -m -a -w 70% -h 45% -y 100 -x 15%  --class scratch kitty --class=scratch
 
 # Hide/Show Bar (Polybar and/or eww)
 #super + {h,u}

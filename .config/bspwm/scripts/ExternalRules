@@ -16,7 +16,7 @@ consequences=$4
 			;;
 		Pavucontrol)
 			eval "$consequences"
-			[ "$state" ] || echo "state=floating center=on"
+			[ "$state" ] || echo "state=floating center=on rectangle=760x495+0+0"
 			;;
 		Virt-manager)
 			eval "$consequences"
