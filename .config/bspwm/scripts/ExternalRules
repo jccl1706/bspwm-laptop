@@ -20,7 +20,7 @@ consequences=$4
 			;;
 		Virt-manager)
 			eval "$consequences"
-			[ "$state" ] || echo "state=floating desktop=^5 follow=on center=on"
+			[ "$state" ] || echo "state=floating desktop=^6 follow=on center=on"
 			;;
 		Thunar)
 			eval "$consequences"

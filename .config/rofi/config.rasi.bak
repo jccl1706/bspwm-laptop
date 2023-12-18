@@ -1,5 +1,5 @@
 configuration{
-    modi: "run,drun,window";
+    modi: "drun,window";
     icon-theme: "Papirus-Dark";
     show-icons: true;
     terminal: "kitty";
@@ -8,11 +8,12 @@ configuration{
     disable-history: false;
     hide-scrollbar: true;
     display-drun: "   Apps ";
-    display-run: "   Run ";
     display-window: "   Window";
-    display-Network: " 󰤨  Network";
     sidebar-mode: true;
+    hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
 }
 
-#@theme "nord"
+/* @theme "nord" */
 
