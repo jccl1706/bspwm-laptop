@@ -2,10 +2,14 @@
 
 padding = 8
 horizontal_padding = 8 
-frame_width = 3 
-font = JetBrainsMono Nerd Font (TTF) 11
+frame_width = 1 
+font = Ubuntu Regular 11
 startup_notification = false
-alignment = center 
+corner_radius = 6
+alignment = center
+
+origin = top-center
+offset = 10x60
 
 frame_color = "#c6a0f6"
 separator_color= frame

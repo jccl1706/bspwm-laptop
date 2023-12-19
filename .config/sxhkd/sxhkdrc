@@ -15,7 +15,7 @@ super + @space
 	rofi -show drun
 
 # window selector
-super + alt +  @space
+alt + Tab
   rofi -show window
 
 # make sxhkd reload its configuration files:
