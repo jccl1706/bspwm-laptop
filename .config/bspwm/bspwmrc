@@ -72,10 +72,12 @@ dunst -config "$HOME"/.config/dunst/dunstrc &
 nm-applet &
 ## polybar launcher
 polylaunch &
-# launch floating desk #6
-dfloating &
+## picom compositor
+picom --config "$HOME"/.config/picom/picom.conf &
+## launch floating desk #6
+#dfloating &
 # Launch polkit
-pidof -q polkit-gnome-authentication-agent-1 || { /usr/libexec/polkit-gnome-authentication-agent-1 & }
+pidof -q polkit-gnome-authentication-agent-1 || { /usr/lib/polkit-gnome-authentication-agent-1 & }
 ## set wallpaper
 feh --bg-scale ~/.config/wallpapers/moon-evening-sky.jpg
 ## fix cursor

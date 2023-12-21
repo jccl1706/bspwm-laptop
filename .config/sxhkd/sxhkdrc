@@ -110,13 +110,26 @@ alt + shift {Left,Down,Up,Right}
 # my key adds
 #
 
-# laptop screen brightness up
-#XF86MonBrightnessUp
-#        brightnessctl -q s +10%
+# dell xps screen brightness up
+XF86MonBrightnessUp
+	brillo -s intel_backlight -u 150000 -A 5
 
-# laptop screen brightness down
-#XF86MonBrightnessDown
-#        brightnessctl -q s 10%-
+# dell xps screen brightness down
+XF86MonBrightnessDown
+	brillo -s intel_backlight -u 150000 -U 5
+
+# dell xps audio mute
+XF86AudioMute
+	pactl set-sink-mute 0 toggle
+
+# dell xps audio lower
+XF86AudioLowerVolume
+	pactl set-sink-volume 0 -5%
+
+# dell xps audio rise
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 +5%
+
 
 # Scratchpad
 super + alt + o
