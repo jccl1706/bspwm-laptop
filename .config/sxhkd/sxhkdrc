@@ -111,22 +111,30 @@ alt + shift {Left,Down,Up,Right}
 #
 
 # dell xps screen brightness up
-XF86MonBrightnessUp
-	brillo -s intel_backlight -u 150000 -A 5
+#XF86MonBrightnessUp
+#	brillo -s intel_backlight -u 150000 -A 5
 
 # dell xps screen brightness down
-XF86MonBrightnessDown
-	brillo -s intel_backlight -u 150000 -U 5
+#XF86MonBrightnessDown
+#	brillo -s intel_backlight -u 150000 -U 5
 
-# dell xps audio mute
+# asus g16 keyboard light Up
+XF86KbdBrightnessUp
+	asusctl -n
+
+# asus g16 keyboard light Down
+XF86KbdBrightnessDown
+	asusctl -p
+
+# asus g16 audio mute
 XF86AudioMute
 	pactl set-sink-mute 0 toggle
 
-# dell xps audio lower
+# asus g16 audio lower
 XF86AudioLowerVolume
 	pactl set-sink-volume 0 -5%
 
-# dell xps audio rise
+# asus g16 audio rise
 XF86AudioRaiseVolume
 	pactl set-sink-volume 0 +5%
 
