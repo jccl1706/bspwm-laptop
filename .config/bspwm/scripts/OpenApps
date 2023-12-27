@@ -7,7 +7,7 @@ case "$1" in
 		;;
 	--floating)
 		alacritty --class FloaTerm,Alacritty -o window.dimensions.lines=22 window.dimensions.columns=90
-    ;;
-  --soundcontrol)
+    		;;
+    --soundcontrol)
 		pavucontrol
 esac

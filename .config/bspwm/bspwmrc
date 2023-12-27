@@ -31,7 +31,7 @@ bspc monitor -d 1 2 3 4 5 6
 ## external rules
 bspc config external_rules_command "$HOME"/.config/bspwm/scripts/ExternalRules
 
-bspc config window_gap			6
+bspc config window_gap			8
 bspc config split_ratio			0.50
 bspc config single_monocle		true
 bspc config borderless_monocle		false
@@ -66,20 +66,28 @@ processes=("polybar" "sxhkd" "dunst" "nm-applet" "feh")
 
 ## hotkey daemon
 sxhkd -c "$HOME"/.config/sxhkd/sxhkdrc &
+
 ## notificationn daemon
 dunst -config "$HOME"/.config/dunst/dunstrc &
+
 ## network manager applet
 nm-applet &
+
 ## polybar launcher
 polylaunch &
+
 ## picom compositor
 picom --config "$HOME"/.config/picom/picom.conf &
-## launch floating desk #6
-#dfloating &
-# Launch polkit
+
+## launch all floating window on desk 6
+#bspfloat &
+
+## Launch polkit
 pidof -q polkit-gnome-authentication-agent-1 || { /usr/libexec/polkit-gnome-authentication-agent-1 & }
+
 ## set wallpaper
 feh --bg-scale ~/.config/wallpapers/moon-evening-sky.jpg
+
 ## fix cursor
 xsetroot -cursor_name left_ptr
 xset r rate 200 50

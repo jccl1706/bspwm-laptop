@@ -26,7 +26,10 @@ consequences=$4
 			eval "$consequences"
 			[ "$state" ] || echo "state=pseudo_tiled desktop=^2 rectangle=966x576+0+0 follow=on"
 			;;
-
+		Timeshift-gtk)
+			eval "$consequences"
+			[ "$state" ] || echo "state=floating center=on"
+			;;
 	esac
 
 
