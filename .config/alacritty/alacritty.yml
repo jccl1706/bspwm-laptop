@@ -1,7 +1,4 @@
 
-import:
-      - ~/.config/alacritty/catppuccin-macchiato.yml
-      - ~/.config/alacritty/fonts.yml
   
 window:
   padding:

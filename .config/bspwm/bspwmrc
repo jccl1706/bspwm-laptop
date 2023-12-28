@@ -83,7 +83,7 @@ picom --config "$HOME"/.config/picom/picom.conf &
 #bspfloat &
 
 ## Launch polkit
-pidof -q polkit-gnome-authentication-agent-1 || { /usr/libexec/polkit-gnome-authentication-agent-1 & }
+pidof -q polkit-gnome-authentication-agent-1 || { /usr/lib/polkit-gnome-authentication-agent-1 & }
 
 ## set wallpaper
 feh --bg-scale ~/.config/wallpapers/moon-evening-sky.jpg

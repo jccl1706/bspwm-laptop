@@ -6,7 +6,8 @@ case "$1" in
 		kitty
 		;;
 	--floating)
-		alacritty --class FloaTerm,Alacritty -o window.dimensions.lines=22 window.dimensions.columns=90
+		#alacritty --class FloaTerm,Alacritty -o window.dimensions.lines=22 window.dimensions.columns=90
+		kitty --class FloaTerm,kitty
     		;;
     --soundcontrol)
 		pavucontrol
